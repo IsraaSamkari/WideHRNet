@@ -21,15 +21,15 @@ Use the following command to train the model
 bash ./tools/dist_train.sh <Config PATH> <NUM GPUs> --seed 0
 ```
 Examples:
-### Training on the MPII dataset
+### Single machine
 ```shell
-# single machine
+# Training on the MPII dataset
 bash ./tools/dist_train.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mpii/widehrnet_18_mpii_256x256.py 1 --seed 0
 ```
 
-### Training on the COCO dataset
+### Multiple machines
 ```shell
-#  multiple machines
+#  Training on the COCO dataset
 bash ./tools/dist_train.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_coco_256x192.py 8 --seed 0 
 ```
 
@@ -39,20 +39,20 @@ Use the following command to test the model
 bash ./tools/dist_test.sh <Config PATH> <Checkpoint PATH> <NUM GPUs>
 ```
 Examples:
-### Testing on the MPII dataset
 ```shell
-# single machine
+# Testing on the MPII dataset
 bash ./tools/dist_test.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mpii/widehrnet_18_mpii_256x256.py  ../work_dirs/epoch_210.pth 1
 ```
 
-### Testing on the COCO dataset
 ```shell
-#  multiple machines
+#  Testing on the COCO dataset
 bash ./tools/dist_test.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_coco_256x192.py  ../work_dirs/epoch_210.pth 1
 ```
 
 ## Get the computational complexity
+```shell
 python3 ./tools/summary_network.py ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mpii/widehrnet_18_mpii_256x256.py 
+```
 
 
 # TODO List
