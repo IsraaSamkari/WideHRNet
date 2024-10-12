@@ -30,6 +30,7 @@ If you use our code or models in your research, please cite with:
 - [x] Upload WideHRNet code
 - [x] Add abstract and link of WideHRNet paper
 - [ ] Add comparison table (MPII and COCO datasets)
+- [ ] Upload checkpoints
 - [ ] Add environment setup 
 - [ ] Add instructions on how to train and test the model
 - [x] Add Acknowledgement
