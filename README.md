@@ -14,7 +14,7 @@ The code was developed and tested on Ubuntu 22.04. We used 1 RTX 3060 GPU card t
 - Linux 
 
 ## Training 
-We have trained our model on the MPII dataset using 1 RTX 3060 GPU card. After a while, we had a higher graphics card (8 NVIDIA V100 GPU) that allowed us to train our model on the COCO dataset.
+We have trained our model on the MPII dataset using 1 RTX 3060 GPU card. After a while, we had a higher graphics card (8 NVIDIA V100 GPU) available, which allowed us to train our model on the COCO dataset.
 
 Use the following command to train the model
 ```shell
