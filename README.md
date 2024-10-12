@@ -5,7 +5,7 @@ Human pose estimation is a task that involves locating the body joints in an ima
 
 You can read the full paper [here](https://ieeexplore.ieee.org/abstract/document/10707605)
 
-<img width="1024" height="712" src="/resources/WideHRNet_block.jpg"/>
+<img width="1024" height="780" src="/resources/WideHRNet_block.jpg"/>
 
 
 # Acknowledgement
