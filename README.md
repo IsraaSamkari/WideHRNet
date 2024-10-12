@@ -18,10 +18,10 @@ Using groundtruth bounding boxes. The metric is PCKh.
 
 
 ### Results on COCO val2017
-Using detection results from a detector that obtains 56 mAP on the person.
-| Model  | Input Size | Expansion ratio | Reduction ratio | #Params | FLOPs | AP | AR | config | log | weight |
-| :----------------- | :-----------: | :-----------: | :-----------: | :------: | :-----------: | :------: |:------: | :------: |  :------: |  :------: |
-| Wide-HRNet-18 + SE| 256x192 | 4 | 4 |4.4M | 0.9G | 69.8 | 75.6 | url |  url |  url |
+Using detection results from a detector that obtains 56 mAP on the person. The value of the channel expansion and SE reduction ratio is 4 and 4, respectively.
+| Model  | Input Size | #Params | FLOPs | AP | AR | config | log | weight |
+| :----------------- | :-----------:  | :------: | :-----------: | :------: |:------: | :------: |  :------: |  :------: |
+| Wide-HRNet-18 + SE| 256x192 |4.4M | 0.9G | 69.8 | 75.6 | url |  url |  url |
 
 
 
