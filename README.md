@@ -10,7 +10,7 @@ Building block, where (a) is the proposed block that is inspired by various bloc
 
 ## Results and models
 ### Results on MPII val set
-Using groundtruth bounding boxes. The metric is PCKh.
+Using groundtruth bounding boxes. The metric is PCKh.  The value of the channel expansion and SE reduction ratio is 4 and 4, respectively.
 | Model  | Input Size | #Params | FLOPs | PCKh | config | log | weight |
 | :----------------- | :-----------: | :------: | :------: |:------: | :------: |  :------: |  :------: |
 | Wide-HRNet-18 | 256x256 | 2.7M | 0.96G | 87.7 | url |  url |  url |
