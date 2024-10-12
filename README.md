@@ -8,6 +8,21 @@ You can read the full paper [here](https://ieeexplore.ieee.org/abstract/document
 <img width="960" height="512" src="/resources/WideHRNet.jpg"/>
 Building block, where (a) is the proposed block that is inspired by various blocks, including (b) the conditional channel weighting (CCW) and (c) the inverted residual block. The stride value of all these blocks is 1. Conv: convolution, BN: batch normalization, SE: squeeze-excitation block, CRW: cross-resolution weights block, and SW: spatial weights block.
 
+## Results and models
+### Results on MPII val set
+| Model  | Input Size | #Params | FLOPs | PCKh | config | log | weight |
+| :----------------- | :-----------: | :------: | :------: |:------: | :------: |  :------: |  :------: |
+| Wide-HRNet-18 | 256x256 | 2.7M | 0.96G | 87.7 | url |  url |  url |
+| Wide-HRNet-18 + SE| 256x256 | 4.4M | 0.97G | 88.47 | url |  url |  url |
+
+
+### Results on COCO val2017
+| Model  | Input Size | #Params | FLOPs | AP | AR | config | log | weight |
+| :----------------- | :-----------: | :------: | :-----------: | :------: |:------: | :------: |  :------: |  :------: |
+| Wide-HRNet-18 + SE| 256x192 | 4.4M | 0.9G | 69.8 | 75.6 | url |  url |  url |
+
+
+
 # Usage 
 The code was developed and tested on Ubuntu 22.04. We used 1 RTX 3060 GPU card to train and test the model. We also trained the WideHRNet model using 8 NVIDIA V100 GPU cards. Other platforms or GPU cards are not fully tested.
 
