@@ -6,6 +6,7 @@ Human pose estimation is a task that involves locating the body joints in an ima
 You can read the full paper [here](https://ieeexplore.ieee.org/abstract/document/10707605)
 
 <img width="960" height="512" src="/resources/WideHRNet.jpg"/>
+Building block, where (a) is the proposed block that is inspired by various blocks, including (b) the conditional channel weighting (CCW) and (c) the inverted residual block. The stride value of all these blocks is 1. Conv: convolution, BN: batch normalization, SE: squeeze-excitation block, CRW: cross-resolution weights block, and SW: spatial weights block.
 
 # Usage 
 The code was developed and tested on Ubuntu 22.04. We used 1 RTX 3060 GPU card to train and test the model. We also trained the WideHRNet model using 8 NVIDIA V100 GPU cards. Other platforms or GPU cards are not fully tested.
