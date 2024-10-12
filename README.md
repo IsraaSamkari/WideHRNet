@@ -10,6 +10,7 @@ Building block, where (a) is the proposed block that is inspired by various bloc
 
 ## Results and models
 ### Results on MPII val set
+Using groundtruth bounding boxes. The metric is PCKh.
 | Model  | Input Size | #Params | FLOPs | PCKh | config | log | weight |
 | :----------------- | :-----------: | :------: | :------: |:------: | :------: |  :------: |  :------: |
 | Wide-HRNet-18 | 256x256 | 2.7M | 0.96G | 87.7 | url |  url |  url |
@@ -17,6 +18,7 @@ Building block, where (a) is the proposed block that is inspired by various bloc
 
 
 ### Results on COCO val2017
+Using detection results from a detector that obtains 56 mAP on the person.
 | Model  | Input Size | #Params | FLOPs | AP | AR | config | log | weight |
 | :----------------- | :-----------: | :------: | :-----------: | :------: |:------: | :------: |  :------: |  :------: |
 | Wide-HRNet-18 + SE| 256x192 | 4.4M | 0.9G | 69.8 | 75.6 | url |  url |  url |
@@ -74,7 +76,7 @@ python3 ./tools/summary_network.py ./configs/body/2d_kpt_sview_rgb_img/topdown_h
 # TODO List
 - [ ] Upload WideHRNet code
 - [x] Add abstract and link of WideHRNet paper
-- [ ] Add results table (MPII and COCO datasets)
+- [x] Add results table (MPII and COCO datasets)
 - [ ] Upload checkpoints
 - [x] Add environment setup 
 - [x] Add instructions on how to train and test the model
