@@ -29,7 +29,15 @@ Using detection results from a detector that obtains 56 mAP on the person. The v
 The code was developed and tested on Ubuntu 22.04. We used 1 RTX 3060 GPU card to train and test the model. We also trained the WideHRNet model using 8 NVIDIA V100 GPU cards. Other platforms or GPU cards are not fully tested.
 
 ## Requirements
-- Linux 
+- Linux
+- Python 3.8
+- mmcv 1.4.8
+- PyTorch 1.9.0
+
+After installing these libraries, install timm and einops, i.e.,
+```shell
+pip install timm==0.4.9 einops
+```
 
 ## Training 
 We have trained our model on the MPII dataset using 1 RTX 3060 GPU card. After a while, we had a higher graphics card (8 NVIDIA V100 GPU) available, which allowed us to train our model on the COCO dataset.
