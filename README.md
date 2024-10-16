@@ -82,7 +82,7 @@ python3 ./tools/summary_network.py ./configs/body/2d_kpt_sview_rgb_img/topdown_h
 
 
 # TODO List
-- [ ] Upload WideHRNet code
+- [x] Upload WideHRNet code
 - [x] Add abstract and link of WideHRNet paper
 - [x] Add results table (MPII and COCO datasets)
 - [ ] Upload checkpoints
