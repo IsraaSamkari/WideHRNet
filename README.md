@@ -13,15 +13,15 @@ Building block, where (a) is the proposed block that is inspired by various bloc
 Using groundtruth bounding boxes. The metric is PCKh.  The value of the channel expansion and SE reduction ratio is 4 and 4, respectively.
 | Model  | Input Size | #Params | FLOPs | PCKh | config | log | weight |
 | :----------------- | :-----------: | :------: | :------: |:------: | :------: |  :------: |  :------: |
-| Wide-HRNet-18 | 256x256 | 2.7M | 0.96G | 87.7 | [config](WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mpii/widehrnet_18_mpii_256x256.py) |  url |  url |
-| Wide-HRNet-18 + SE| 256x256 | 4.4M | 0.97G | 88.47 | [config](WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mpii/widehrnet_18_se_mpii_256x256.py)  |  url |  url |
+| Wide-HRNet-18 | 256x256 | 2.7M | 0.96G | 87.7 | [config](WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mpii/widehrnet_18_mpii_256x256.py) |  [log](https://drive.google.com/drive/folders/1dCMll1oy_dD3jTJnAUD4ll_50mCpnJcK?usp=sharing) |  [weight](https://drive.google.com/drive/folders/1dCMll1oy_dD3jTJnAUD4ll_50mCpnJcK?usp=sharing) |
+| Wide-HRNet-18 + SE| 256x256 | 4.4M | 0.97G | 88.47 | [config](WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mpii/widehrnet_18_se_mpii_256x256.py)  |  [log](https://drive.google.com/drive/folders/1Gj4YTWLM4QpfUtUP9CouG13nTmPppeKb?usp=sharing) |  [weight](https://drive.google.com/drive/folders/1Gj4YTWLM4QpfUtUP9CouG13nTmPppeKb?usp=sharing) |
 
 
 ### Results on COCO val2017
 Using detection results from a detector that obtains 56 mAP on the person. The value of the channel expansion and SE reduction ratio is 4 and 4, respectively.
 | Model  | Input Size | #Params | FLOPs | AP | AR | config | log | weight |
 | :----------------- | :-----------:  | :------: | :-----------: | :------: |:------: | :------: |  :------: |  :------: |
-| Wide-HRNet-18 + SE| 256x192 |4.4M | 0.9G | 69.8 | 75.6 | url |  url |  url |
+| Wide-HRNet-18 + SE| 256x192 |4.4M | 0.9G | 69.8 | 75.6 | [config](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |  [log](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |  [weight](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |
 
 
 
@@ -85,7 +85,8 @@ python3 ./tools/summary_network.py ./configs/body/2d_kpt_sview_rgb_img/topdown_h
 - [x] Upload WideHRNet code
 - [x] Add abstract and link of WideHRNet paper
 - [x] Add results table (MPII and COCO datasets)
-- [ ] Upload checkpoints
+- [x] Upload checkpoints
+- [ ] Update checkpoints
 - [x] Add environment setup 
 - [x] Add instructions on how to train and test the model
 - [x] Add acknowledgement
