@@ -13,7 +13,7 @@ Building block, where (a) is the proposed block that is inspired by various bloc
 Using groundtruth bounding boxes. The metric is PCKh.  The value of the channel expansion and SE reduction ratio is 4 and 4, respectively.
 | Model  | Input Size | #Params | FLOPs | PCKh | config | log | weight |
 | :----------------- | :-----------: | :------: | :------: |:------: | :------: |  :------: |  :------: |
-| Wide-HRNet-18 | 256x256 | 2.7M | 0.96G | 87.7 | [config](https://ieeexplore.ieee.org/abstract/document/10707605](https://github.com/IsraaSamkari/WideHRNet/blob/main/WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mpii/widehrnet_18_mpii_256x256.py) |  url |  url |
+| Wide-HRNet-18 | 256x256 | 2.7M | 0.96G | 87.7 | [config] (https://ieeexplore.ieee.org/abstract/document/10707605(https://github.com/IsraaSamkari/WideHRNet/blob/main/WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mpii/widehrnet_18_mpii_256x256.py) |  url |  url |
 | Wide-HRNet-18 + SE| 256x256 | 4.4M | 0.97G | 88.47 | [config] (https://github.com/IsraaSamkari/WideHRNet/blob/main/WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mpii/widehrnet_18_se_mpii_256x256.py) |  url |  url |
 
 
