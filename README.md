@@ -21,12 +21,12 @@ Using groundtruth bounding boxes. The metric is PCKh.  The value of the channel 
 Using detection results from a detector that obtains 56 mAP on the person. The value of the channel expansion and SE reduction ratio is 4 and 4, respectively.
 | Model  | Input Size | #Params | FLOPs | AP | AR | config | log | weight |
 | :----------------- | :-----------:  | :------: | :-----------: | :------: |:------: | :------: |  :------: |  :------: |
-| Wide-HRNet-18 + SE| 256x192 |4.4M | 0.9G | 69.8 | 75.6 | [config](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |  [log](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |  [weight](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |
+| Wide-HRNet-18 + SE| 256x192 |4.4M | 0.9G | 69.8 | 75.6 | [config](WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_se_coco_256x192.py) |  [log](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |  [weight](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |
 
 
 
 # Usage 
-The code was developed and tested on Ubuntu 22.04. We used 1 RTX 3060 GPU card to train and test the model. We also trained the WideHRNet model using 8 NVIDIA V100 GPU cards. Other platforms or GPU cards are not fully tested.
+The code was developed and tested on Ubuntu 22.04. We used 1 RTX 3060 GPU card to train and test the model. We also trained the WideHRNet model using 8 NVIDIA 1080ti GPU cards. Other platforms or GPU cards (except NVIDIA v100) are not fully tested.
 
 ## Requirements
 - Linux
@@ -58,15 +58,13 @@ Use the following command to train the model
 bash ./tools/dist_train.sh <Config PATH> <NUM GPUs> --seed 0
 ```
 Examples:
-### Single machine
+Training on the MPII dataset using single machine
 ```shell
-# Training on the MPII dataset
 bash ./tools/dist_train.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mpii/widehrnet_18_mpii_256x256.py 1 --seed 0
 ```
 
-### Multiple machines
+Training on the COCO dataset using multiple machines
 ```shell
-#  Training on the COCO dataset
 bash ./tools/dist_train.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_se_coco_256x192.py 8 --seed 0 
 ```
 
