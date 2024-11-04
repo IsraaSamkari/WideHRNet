@@ -30,9 +30,20 @@ The code was developed and tested on Ubuntu 22.04. We used 1 RTX 3060 GPU card t
 
 ## Requirements
 - Linux
-- Python 3.8
+- Python 3.8 
 - mmcv 1.4.8
 - PyTorch 1.9.0
+- cuda 11.1 or 11.8 
+
+```shell
+pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install mmcv-full==1.4.8 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
+pip install mmdet==2.28.2
+pip install mmpose==0.29.0
+# then clone this repository
+pip install -r requirements.txt
+pip install -v -e .
+```
 
 After installing these libraries, install timm and einops, i.e.,
 ```shell
@@ -56,7 +67,7 @@ bash ./tools/dist_train.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/m
 ### Multiple machines
 ```shell
 #  Training on the COCO dataset
-bash ./tools/dist_train.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_coco_256x192.py 8 --seed 0 
+bash ./tools/dist_train.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_se_coco_256x192.py 8 --seed 0 
 ```
 
 ## Testing
@@ -72,7 +83,7 @@ bash ./tools/dist_test.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/mp
 
 ```shell
 #  Testing on the COCO dataset
-bash ./tools/dist_test.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_coco_256x192.py  ../work_dirs/epoch_210.pth 1
+bash ./tools/dist_test.sh ./configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_se_coco_256x192.py  ../work_dirs/epoch_210.pth 1
 ```
 
 ## Get the computational complexity
