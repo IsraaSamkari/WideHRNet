@@ -33,7 +33,7 @@ The code was developed and tested on Ubuntu 22.04. We used 1 RTX 3060 GPU card t
 - Python 3.8 
 - mmcv 1.4.8
 - PyTorch 1.9.0
-- cuda 11.1 or 11.8 
+- cuda >= 11.1 
 
 ```shell
 pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
