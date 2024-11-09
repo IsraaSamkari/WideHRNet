@@ -22,11 +22,14 @@ Using detection results from a detector that obtains 56 mAP on the person. The v
 | Model  | Input Size | #Params | FLOPs | AP | AR | config | log | weight |
 | :----------------- | :-----------:  | :------: | :-----------: | :------: |:------: | :------: |  :------: |  :------: |
 | Wide-HRNet-18 + SE| 256x192 |4.4M | 0.9G | 70.0 | 75.8 | [config](WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_se_coco_256x192.py) |  [log](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |  [weight](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |
+| Wide-HRNet-18 + SE| 384x288 |4.4M | 1.6G | 70.1 | 76.6 | [config](WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_se_coco_384x288.py) |  [log](https://drive.google.com/drive/folders/1vaNb52yJlQ4O2uxUlzZLmwMXxTZfDcx2?usp=sharing) |  [weight](https://drive.google.com/drive/folders/1vaNb52yJlQ4O2uxUlzZLmwMXxTZfDcx2?usp=sharing) |
+
+
 
 
 
 # Usage 
-The code was developed and tested on Ubuntu 22.04. We used 1 RTX 3060 GPU card to train and test the model. We also trained the WideHRNet model using 8 NVIDIA 1080ti GPU cards. Other platforms or GPU cards (except NVIDIA v100) are not fully tested.
+The code was developed and tested on Ubuntu 22.04. We used 1 RTX 3060 GPU card to train and test the model. We also trained the WideHRNet model using 8 NVIDIA v100 GPU cards. Other platforms or GPU cards (except NVIDIA 1080ti) are not fully tested.
 
 ## Requirements
 - Linux
@@ -95,7 +98,7 @@ python3 ./tools/summary_network.py ./configs/body/2d_kpt_sview_rgb_img/topdown_h
 - [x] Add abstract and link of WideHRNet paper
 - [x] Add results table (MPII and COCO datasets)
 - [x] Upload checkpoints
-- [ ] Update checkpoints
+- [ ] More experiments
 - [x] Add environment setup 
 - [x] Add instructions on how to train and test the model
 - [x] Add acknowledgement
