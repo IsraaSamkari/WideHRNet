@@ -23,6 +23,7 @@ Using detection results from a detector that obtains 56 mAP on the person. The v
 | :----------------- | :-----------:  | :------: | :-----------: | :------: |:------: | :------: |  :------: |  :------: |
 | Wide-HRNet-18 + SE| 256x192 |4.4M | 0.9G | 70.0 | 75.8 | [config](WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_se_coco_256x192.py) |  [log](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |  [weight](https://drive.google.com/drive/folders/1SB0x19DvXZSRZ2ptiRx90YSUrwbNPR34?usp=sharing) |
 | Wide-HRNet-18 + SE| 384x288 |4.4M | 1.6G | 70.1 | 76.6 | [config](WideHRNet/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/widehrnet_18_se_coco_384x288.py) |  [log](https://drive.google.com/drive/folders/1vaNb52yJlQ4O2uxUlzZLmwMXxTZfDcx2?usp=sharing) |  [weight](https://drive.google.com/drive/folders/1vaNb52yJlQ4O2uxUlzZLmwMXxTZfDcx2?usp=sharing) |
+| Wide-HRNet-30 + SE| 256x192 |7.19M | 	1.21G | 71.47 | 77.14 | config |  [log] (https://drive.google.com/drive/folders/1g6d1_o7DLsO8mml6_lA9xY3TVKKTFQnI?usp=drive_link) |  [weight] (https://drive.google.com/drive/folders/1g6d1_o7DLsO8mml6_lA9xY3TVKKTFQnI?usp=drive_link) |
 
 
 
